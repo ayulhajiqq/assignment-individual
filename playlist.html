@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>My Playlist - Khairul Haziq</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+<nav class="navbar navbar-center">
+  <a href="index.html">🏠 Home</a>
+  <a href="about.html">👤 About</a>
+  <a href="gallery.html">📸 Gallery</a>
+  <a href="skills.html">🛠 Skills</a>
+  <a href="workexperience.html">💼 Experience</a>
+  <a href="education.html">🎓 Education</a>
+  <a href="playlist.html" class="active">🎼 Playlist</a>
+  <a href="contact.html">📞 Contact</a>
+</nav>
+
+<main>
+  <section class="playlist-section">
+    <h2>🎧 Songs That I Love 🎧</h2>
+    <ol class="playlist-list">
+      <li>
+        <h3>Yellow –  Coldplay</h3>
+        <img src="yellow.jpg" alt="Yellow by Coldplay [Chorus lyrics]" class="song-img">
+        <audio controls>
+        <source src="Yellow by Coldplay [Chorus lyrics].mp3" type="audio/mpeg">
+        </audio>
+      </li>
+      <li>
+        <h3>About You – The 1975</h3>
+        <img src="aboutyou.jpg" alt="the 1975 - about you (but it’s the best part + loop)" class="song-img">
+        <audio controls>
+          <source src="the 1975 - about you (but its the best part  loop).mp3" type="audio/mpeg">
+        </audio>
+      </li>
+      <li>
+        <h3>Enchanted – Taylor Swift</h3>
+        <img src="enchanted.jpg" alt="enchanted but only the good part" class="song-img">
+        <audio controls>
+          <source src="enchanted but only the good part.mp3" type="audio/mpeg">
+        </audio>
+      </li>
+    </ol>
+  </section>
+</main>
+
+<!-- Footer -->
+  <footer>
+<div class="clock-container">
+  <h2>🕒 Current Time 🕒</h2>
+  <div id="clock"></div>
+</div>
+
+<script>
+  function updateClock() {
+    const now = new Date();
+    const hours = String(now.getHours()).padStart(2, "0");
+    const minutes = String(now.getMinutes()).padStart(2, "0");
+    const seconds = String(now.getSeconds()).padStart(2, "0");
+    const timeString = `${hours}:${minutes}:${seconds}`;
+    document.getElementById("clock").textContent = timeString;
+  }
+
+  setInterval(updateClock, 1000); // Update every second
+  updateClock(); // Initial call
+</script>
+
+
+    <p>© Khairul Haziq Co. 2022. All rights reserved.</p>
+  </footer>
+</body>
+</html>
