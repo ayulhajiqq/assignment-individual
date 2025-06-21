@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Education</title>
+  <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+  <!-- Navigation Bar -->
+  <nav class="navbar navbar-center">
+    <a href="index.html">🏠 Home</a>
+    <a href="about.html">👤 About</a>
+    <a href="gallery.html">📸 Gallery</a>
+    <a href="skills.html">🛠 Skills</a>
+    <a href="workexperience.html">💼 Experience</a>
+    <a href="education.html"class="active">🎓 Education</a>
+    <a href="playlist.html">🎼Playlist</a>
+    <a href="contact.html">📞 Contact</a>
+  </nav>
+
+  <!-- Page Header -->
+  <header>
+    <h1>🎓 Education</h1>
+    <p>My academic background and learning journey</p>
+  </header>
+
+  <!-- Education Section with ImageMaps -->
+  <section class="education-section">
+    <!-- UiTM Card -->
+    <div class="edu-card">
+      <img
+        src="uitm.png"
+        alt="UiTM Logo"
+        width="100" height="100"
+        usemap="#map-uitm"
+      />
+      <map name="map-uitm">
+        <area
+          shape="rect"
+          coords="0,0,100,100"
+          href="https://johor.uitm.edu.my/"
+          alt="UiTM Cawangan Johor"
+          target="_blank"
+        />
+      </map>
+      <div class="edu-details">
+        <h2>Universiti Teknologi MARA (UiTM)</h2>
+        <p><strong>Course:</strong> Diploma in Information Management</p>
+        <p><strong>Year:</strong> 2022 - Present</p>
+        <p><strong>Location:</strong> UiTM Kampus Segamat, Johor</p>
+      </div>
+    </div>
+
+    <!-- SMK Card -->
+    <div class="edu-card">
+      <img
+        src="JEA5022.jpg"
+        alt="SMK Logo"
+        width="100" height="100"
+        usemap="#map-smk"
+      />
+      <map name="map-smk">
+        <area
+          shape="rect"
+          coords="0,0,100,100"
+          href="https://www.facebook.com/sedarmuarjohor/?locale=ms_MY"
+          alt="SMK Seri Amar Diraja"
+          target="_blank"
+        />
+      </map>
+      <div class="edu-details">
+        <h2>SMK Seri Amar Diraja</h2>
+        <p><strong>Qualification:</strong> Sijil Pelajaran Malaysia (SPM)</p>
+        <p><strong>Year:</strong> 2017 - 2021</p>
+        <p><strong>Location:</strong> Muar, Johor</p>
+      </div>
+    </div>
+
+    <!-- SK Parit Kadzi Card -->
+    <div class="edu-card">
+      <img
+        src="skpk.jpg"
+        alt="SK Parit Kadzi Logo"
+        width="100" height="100"
+        usemap="#map-skpk"
+      />
+      <map name="map-skpk">
+        <area
+          shape="rect"
+          coords="0,0,100,100"
+          href="https://www.facebook.com/p/SK-PARIT-KADZI-100065183341635/"
+          alt="SK Parit Kadzi"
+          target="_blank"
+        />
+      </map>
+      <div class="edu-details">
+        <h2>SK Parit Kadzi</h2>
+        <p><strong>Qualification:</strong> UPSR</p>
+        <p><strong>Year:</strong> 2011 - 2016</p>
+        <p><strong>Location:</strong> Muar, Johor</p>
+      </div>
+    </div>
+  </section>
+  
+<!-- Footer -->
+  <footer>
+<div class="clock-container">
+  <h2>🕒 Current Time 🕒</h2>
+  <div id="clock"></div>
+</div>
+
+<script>
+  function updateClock() {
+    const now = new Date();
+    const hours = String(now.getHours()).padStart(2, "0");
+    const minutes = String(now.getMinutes()).padStart(2, "0");
+    const seconds = String(now.getSeconds()).padStart(2, "0");
+    const timeString = `${hours}:${minutes}:${seconds}`;
+    document.getElementById("clock").textContent = timeString;
+  }
+
+  setInterval(updateClock, 1000); // Update every second
+  updateClock(); // Initial call
+</script>
+
+
+    <p>© Khairul Haziq Co. 2022. All rights reserved.</p>
+  </footer>
+</body>
+</html>
+

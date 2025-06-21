@@ -1,0 +1,1123 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background: url('baik.jpg') no-repeat center center fixed;
+  background-size: cover;
+  color: #ffffff;
+  line-height: 1.6;
+}
+
+header.hero {
+  background: url('bintang.jpg') center/cover no-repeat;
+  text-align: center;
+  width: 100%;
+  height: 400px; 
+  max-width: 100%;
+  border: 6px solid #020101; 
+  border-radius: 15px; 
+  margin: 0 auto;
+  color: rgb(255, 255, 255);
+  position: relative;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2); 
+}
+
+header.hero .overlay {
+  position: absolute;
+  top: 0; left: 0;
+  width: 100%; height: 100%;
+  background: rgba(0, 0, 0, 0.6);
+  z-index: 1;
+}
+
+.profile-img {
+  width: 180px;
+  height: 180px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 5px solid #000000; 
+  background-color: rgb(154, 74, 74);
+  padding: 4px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+  margin: 0 auto 1rem auto;
+  position: relative;
+  z-index: 2;
+}
+
+.gallery-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.gallery-container img {
+  width: 200px;
+  height: auto;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease;
+}
+
+.gallery-container img:hover {
+  transform: scale(1.05);
+}
+
+.hero-text {
+  position: relative;
+  z-index: 2;
+}
+
+.hero-text h1 {
+  font-size: 2rem;
+}
+
+.navbar-center {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  background-color: #57068c;
+  padding: 1rem;
+  position: sticky;
+  top: 0;
+  z-index: 999;
+}
+
+.navbar-center a {
+  background-color: white;
+  color: #57068c;
+  padding: 0.5rem 1rem;
+  border-radius: 30px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: 0.3s ease;
+}
+
+.navbar-center a:hover {
+  background-color: #e684a6;
+  color: white;
+}
+
+main {
+  max-width: 1000px;
+  margin: 2rem auto;
+  padding: 0 1rem;
+}
+
+section {
+  margin-bottom: 3rem;
+  background: #57068c;
+  padding: 1.5rem;
+  border-radius: 10px;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+}
+
+section h2 {
+  text-align: center;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 1.6rem;
+}
+
+ul li {
+  margin-left: 1.5rem;
+  list-style: square;
+  margin-bottom: 0.5rem;
+}
+
+.skills-section {
+  padding: 40px;
+  background-color: #222;
+  color: white;
+  text-align: center;
+}
+
+.skills-section h2 {
+  font-size: 2rem;
+  margin-bottom: 30px;
+}
+
+.skills-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+  gap: 20px;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.skill-card {
+  background-color: #333;
+  padding: 20px;
+  border-radius: 12px;
+  font-size: 1.1rem;
+  font-weight: 600;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
+  transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+.skill-card span {
+  display: block;
+  margin-top: 10px;
+}
+
+.skill-card:hover {
+  background-color: #00ffc3;
+  color: black;
+  transform: scale(1.05);
+  cursor: pointer;
+}
+
+.experience-section {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  padding: 30px;
+  background-color: #f5f5f5;
+}
+
+.experience-card {
+  display: flex;
+  align-items: flex-start;
+  gap: 20px;
+  background-color: #fff;
+  border-radius: 12px;
+  padding: 20px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  flex-wrap: wrap;
+}
+
+.experience-card img {
+  width: 180px;
+  height: 180px;
+  object-fit: cover;
+  border-radius: 12px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+}
+
+.experience-details {
+  flex: 1;
+  color: black;
+}
+
+.experience-details h2 {
+  margin-bottom: 10px;
+  color: #2c3e50;
+}
+
+.experience-details p {
+  margin: 5px 0;
+}
+
+
+.exp-logo {
+  width: 60px;
+  height: 60px;
+  object-fit: contain;
+}
+
+.about-img {
+  display: block;
+  margin: 0 auto 1rem auto;
+  width: 180px;
+  height: auto;
+  border-radius: 10px;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.2);
+}
+
+a {
+  color: #57068c;
+}
+
+.uitm-link {
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.uitm-link:hover {
+  text-decoration: underline;
+}
+
+footer {
+  background: #57068c;
+  color: rgb(0, 0, 0);
+  text-align: center;
+  padding: 1rem 0;
+  margin-top: 2rem;
+}
+
+.uitm-link, .sedar-link, .skpk-link {
+  color: #ffde59; 
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.uitm-link:hover,
+.sedar-link:hover,
+.skpk-link:hover {
+  text-decoration: underline;
+  color: #ffffff; 
+}
+
+#contact p {
+  margin-bottom: 1rem;
+  font-size: 1.05rem;
+}
+
+#contact a {
+  color: #ffde59;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+#contact a:hover {
+  text-decoration: underline;
+  color: #ffffff;
+}
+
+.email-link {
+  color: #ffde59;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.email-link:hover {
+  color: #ffffff;
+  text-decoration: underline;
+}
+
+#contact a {
+  color: #25d366; 
+  font-weight: bold;
+  text-decoration: none;
+}
+
+#contact a:hover {
+  text-decoration: underline;
+  color: #ffffff;
+}
+
+.location-img {
+  display: block;
+  width: 100%;
+  height: 350px; 
+  object-fit: cover; 
+  border-radius: 15px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+  margin-top: 1rem;
+}
+
+#contact p {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  margin-bottom: 1rem;
+  font-size: 1rem;
+}
+
+.icon {
+  width: 20px;
+  height: 20px;
+  vertical-align: middle;
+}
+
+.contact-section,
+#contactdetails {
+  color: white; 
+  background-color: #222; 
+  padding: 20px;
+  border-radius: 10px;
+}
+
+/* Education section styling */
+.education-section {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding: 30px;
+  background-color: #222; /* dark background */
+  color: white; /* white text */
+}
+
+.edu-card {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  background-color: #333;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.4);
+}
+
+.edu-card img {
+  width: 100px;
+  height: 100px;
+  object-fit: contain;
+  border-radius: 10px;
+  background: white;
+  padding: 5px;
+}
+
+.edu-details {
+  flex: 1;
+}
+
+.edu-details h2 {
+  margin-bottom: 5px;
+  color: white;
+}
+
+.edu-details p {
+  margin: 5px 0;
+  color: #ddd;
+}
+
+.clock-container {
+  text-align: center;
+  background-color: #000000;
+  color: #640dab;
+  padding: 30px;
+  border-radius: 12px;
+  margin: 40px auto;
+  max-width: 400px;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.4);
+}
+
+#clock {
+  font-size: 2.5rem;
+  font-family: 'Courier New', monospace;
+  margin-top: 10px;
+}
+
+.playlist-list {
+  list-style-type: none;
+  padding-left: 0;
+  font-size: 1.1rem;
+}
+
+.playlist-list li {
+  margin: 0.5rem 0;
+  padding: 0.5rem;
+  background-color: #f4f4f4;
+  color: #333;
+  border-radius: 8px;
+}
+
+/* ------------- Global & Background ------------- */
+body {
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background: url('bintang.jpg') no-repeat center center fixed;
+  background-size: cover;
+  color: #fff;
+}
+
+/* ------------- Navbar ------------- */
+.navbar {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 1rem;
+  background-color: rgba(87, 6, 140, 0.95);
+  padding: 1rem;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+.navbar a {
+  text-decoration: none;
+  color: #fff;
+  padding: 0.6rem 1.2rem;
+  border-radius: 30px;
+  background-color: rgba(0, 0, 0, 0.3);
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.navbar a:hover,
+.navbar a.active {
+  background-color: #e684a6;
+  color: #000;
+}
+
+/* ------------- Gallery Section ------------- */
+.gallery-section {
+  max-width: 1100px;
+  margin: 3rem auto;
+  background-color: rgba(0, 0, 0, 0.65);
+  padding: 2rem;
+  border-radius: 15px;
+  box-shadow: 0 0 15px rgba(0,0,0,0.4);
+  text-align: center;
+}
+
+.gallery-section h2 {
+  font-size: 1.8rem;
+  margin-bottom: 1.5rem;
+  color: #ffde59;
+}
+
+/* ------------- Media Grid (Side-by-side) ------------- */
+.media-row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1.5rem;
+}
+
+.media-row img,
+.media-row video {
+  width: 300px;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.5);
+  transition: transform 0.3s ease;
+}
+
+.media-row img:hover,
+.media-row video:hover {
+  transform: scale(1.05);
+}
+
+/* ------------- Clock Section ------------- */
+.clock-container {
+  text-align: center;
+  margin: 2rem auto 1rem auto;
+  padding: 1rem;
+  background-color: rgba(0, 0, 0, 0.6);
+  border-radius: 12px;
+  width: fit-content;
+  box-shadow: 0 0 10px rgba(255, 222, 89, 0.5);
+}
+
+#clock {
+  font-size: 2rem;
+  font-weight: bold;
+  color: #ffffff;
+}
+
+/* ------------- Footer ------------- */
+footer {
+  background-color: rgba(87, 6, 140, 0.95);
+  color: white;
+  text-align: center;
+  padding: 1.5rem 0;
+  margin-top: 3rem;
+  font-size: 0.9rem;
+}
+/* RESET */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* BODY BACKGROUND - DARK PURPLE THEME */
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background: url('bintang.jpg') no-repeat center center fixed;
+  background-size: cover;
+  color: #ffffff;
+  line-height: 1.6;
+  min-height: 100vh;
+}
+
+/* NAVIGATION BAR */
+.navbar {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 1rem;
+  background-color: rgba(87, 6, 140, 0.95); /* Dark purple */
+  padding: 1rem;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+.navbar a {
+  color: #fff;
+  text-decoration: none;
+  padding: 0.6rem 1.2rem;
+  border-radius: 30px;
+  background-color: rgba(0, 0, 0, 0.3);
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.navbar a:hover,
+.navbar a.active {
+  background-color: #e684a6;
+  color: #000;
+}
+
+/* ABOUT SECTION */
+#about {
+  max-width: 900px;
+  margin: 3rem auto;
+  background-color: rgba(0, 0, 0, 0.65);
+  padding: 2rem;
+  border-radius: 15px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.4);
+  text-align: center;
+}
+
+#about h2 {
+  font-size: 2rem;
+  margin-bottom: 1.5rem;
+  color: #ffde59;
+}
+
+#about ul {
+  list-style: none;
+  padding-left: 0;
+  text-align: left;
+  margin-top: 1rem;
+}
+
+#about ul li {
+  margin-bottom: 0.8rem;
+  font-size: 1.05rem;
+  padding-left: 1.5rem;
+  position: relative;
+}
+
+#about ul li::before {
+  content: '✨';
+  position: absolute;
+  left: 0;
+}
+
+/* ABOUT IMAGE */
+.about-img {
+  width: 300px;
+  height: auto;
+  border-radius: 12px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.4);
+  margin: 1.5rem auto;
+  display: block;
+}
+
+/* CLOCK SECTION */
+.clock-container {
+  text-align: center;
+  margin: 2rem auto 1rem auto;
+  padding: 1rem;
+  background-color: rgba(0, 0, 0, 0.6);
+  border-radius: 12px;
+  width: fit-content;
+  box-shadow: 0 0 10px rgba(255, 222, 89, 0.5);
+}
+
+.clock-container h2 {
+  color: #ffde59;
+  margin-bottom: 0.5rem;
+}
+
+#clock {
+  font-size: 2rem;
+  font-weight: bold;
+  color: #ffffff;
+}
+
+/* FOOTER */
+footer {
+  background-color: rgba(87, 6, 140, 0.95);
+  color: white;
+  text-align: center;
+  padding: 1.5rem 0;
+  margin-top: 3rem;
+  font-size: 0.95rem;
+}
+
+.typewriter {
+  border-right: 2px solid #ffde59;
+  padding-right: 5px;
+  white-space: nowrap;
+  overflow: hidden;
+  font-weight: bold;
+  font-size: 1.8rem;
+  color: #ffde59;
+  animation: blink 0.7s step-end infinite;
+}
+
+@keyframes blink {
+  50% {
+    border-color: transparent;
+  }
+}
+
+/* ---------------- BACKGROUND & BODY ---------------- */
+body {
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background: url('bintang.jpg') no-repeat center center fixed;
+  background-size: cover;
+  color: #ffffff;
+}
+
+/* ---------------- NAVBAR ---------------- */
+.navbar {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 1rem;
+  background-color: rgba(87, 6, 140, 0.95);
+  padding: 1rem;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+.navbar a {
+  color: #fff;
+  text-decoration: none;
+  padding: 0.6rem 1.2rem;
+  border-radius: 30px;
+  background-color: rgba(0, 0, 0, 0.3);
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.navbar a:hover,
+.navbar a.active {
+  background-color: #e684a6;
+  color: #000;
+}
+
+/* ---------------- HEADER ---------------- */
+.experience-header {
+  text-align: center;
+  padding: 3rem 1rem 1rem;
+  color: #ffde59;
+}
+
+.experience-header h1 {
+  font-size: 2rem;
+  margin-bottom: 0.5rem;
+}
+
+.experience-header p {
+  color: #ddd;
+}
+
+/* ---------------- TABLE ---------------- */
+.experience-table-section {
+  max-width: 1100px;
+  margin: 2rem auto;
+  padding: 1rem;
+  background-color: rgba(0, 0, 0, 0.65);
+  border-radius: 15px;
+  box-shadow: 0 0 20px rgba(0,0,0,0.4);
+  overflow-x: auto;
+}
+
+.experience-table {
+  width: 100%;
+  border-collapse: collapse;
+  color: #fff;
+}
+
+.experience-table th,
+.experience-table td {
+  padding: 1rem;
+  text-align: left;
+  border-bottom: 1px solid #444;
+}
+
+.experience-table th {
+  background-color: rgba(87, 6, 140, 0.8);
+  color: #ffde59;
+}
+
+.table-img {
+  width: 60px;
+  height: 60px;
+  object-fit: cover;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.5);
+}
+
+/* ---------------- FOOTER ---------------- */
+footer {
+  background-color: rgba(87, 6, 140, 0.95);
+  color: white;
+  text-align: center;
+  padding: 1.2rem 0;
+  font-size: 0.95rem;
+  margin-top: 3rem;
+}
+
+/* ------------------- RESET ------------------- */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* ------------------- BODY ------------------- */
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background: url('bintang.jpg') no-repeat center center fixed;
+  background-size: cover;
+  color: #ffffff;
+  line-height: 1.6;
+}
+
+/* ------------------- NAVBAR ------------------- */
+.navbar {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 1rem;
+  background-color: rgba(87, 6, 140, 0.95);
+  padding: 1rem;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+.navbar a {
+  text-decoration: none;
+  color: #fff;
+  padding: 0.6rem 1.2rem;
+  border-radius: 30px;
+  background-color: rgba(0, 0, 0, 0.3);
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.navbar a:hover,
+.navbar a.active {
+  background-color: #e684a6;
+  color: #000;
+}
+
+/* ------------------- SKILLS SECTION ------------------- */
+.skills-section {
+  max-width: 1100px;
+  margin: 3rem auto;
+  background-color: rgba(0, 0, 0, 0.65);
+  padding: 2rem;
+  border-radius: 15px;
+  box-shadow: 0 0 20px rgba(0,0,0,0.4);
+  text-align: center;
+}
+
+.skills-section h2 {
+  font-size: 2rem;
+  margin-bottom: 2rem;
+  color: #ffde59;
+}
+
+/* ------------------- SKILLS GRID ------------------- */
+.skills-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 1.5rem;
+  padding: 0 1rem;
+}
+
+.skill-card {
+  background: rgba(255, 255, 255, 0.1);
+  color: #ffffff;
+  padding: 1.2rem;
+  border-radius: 12px;
+  font-size: 1rem;
+  font-weight: bold;
+  text-align: center;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.5);
+  transition: transform 0.3s ease, background 0.3s ease;
+}
+
+.skill-card:hover {
+  transform: scale(1.05);
+  background: rgba(230, 132, 166, 0.9);
+  color: #000;
+}
+
+/* ------------------- CLOCK SECTION ------------------- */
+.clock-container {
+  text-align: center;
+  margin: 2rem auto 1rem auto;
+  padding: 1rem;
+  background-color: rgba(0, 0, 0, 0.6);
+  border-radius: 12px;
+  width: fit-content;
+  box-shadow: 0 0 10px rgba(255, 222, 89, 0.5);
+}
+
+.clock-container h2 {
+  color: #ffde59;
+  margin-bottom: 0.5rem;
+}
+
+#clock {
+  font-size: 2rem;
+  font-weight: bold;
+  color: #ffffff;
+}
+
+/* ------------------- FOOTER ------------------- */
+footer {
+  background-color: rgba(87, 6, 140, 0.95);
+  color: white;
+  text-align: center;
+  padding: 1.5rem 0;
+  font-size: 0.95rem;
+  margin-top: 3rem;
+}
+
+/* ------------------- LEARN SECTION ------------------- */
+.learn-section {
+  max-width: 1000px;
+  margin: 3rem auto;
+  background-color: rgba(0, 0, 0, 0.65);
+  padding: 2rem;
+  border-radius: 15px;
+  box-shadow: 0 0 15px rgba(0,0,0,0.4);
+  text-align: center;
+}
+
+.learn-section h2 {
+  font-size: 1.8rem;
+  margin-bottom: 1.5rem;
+  color: #ffde59;
+}
+
+/* ------------------- RESPONSIVE VIDEO ------------------- */
+.video-container {
+  position: relative;
+  padding-bottom: 56.25%; /* 16:9 ratio */
+  height: 0;
+  overflow: hidden;
+  border-radius: 12px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.6);
+}
+
+.video-container iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border: none;
+}
+/* Playlist Section */
+.playlist-section {
+  max-width: 900px;
+  margin: 3rem auto;
+  padding: 1rem;
+  background: rgba(87, 6, 140, 0.8);
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.5);
+  color: #fff;
+}
+
+.playlist-section h2 {
+  text-align: center;
+  margin-bottom: 1.5rem;
+  font-size: 2rem;
+  color: #ffde59;
+}
+
+.playlist-list {
+  list-style: decimal inside;
+}
+
+.playlist-list li {
+  margin-bottom: 2rem;
+  padding: 1rem;
+  background: rgba(0,0,0,0.4);
+  border-radius: 10px;
+}
+
+.playlist-list li h3 {
+  margin-bottom: 0.8rem;
+  font-size: 1.2rem;
+  color: #e684a6;
+}
+
+/* Album Art */
+.song-img {
+  display: block;
+  width: 200px;
+  height: auto;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.5);
+  margin-bottom: 1rem;
+}
+
+/* Audio Player */
+audio {
+  width: 100%;
+  max-width: 400px;
+  outline: none;
+}
+
+/* Responsive Layout */
+@media (min-width: 700px) {
+  .playlist-list li {
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+  }
+  .song-img {
+    margin: 0;
+  }
+  audio {
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+/* RESET */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* BODY & BACKGROUND */
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background: url('bintang.jpg') no-repeat center center fixed;
+  background-size: cover;
+  color: #ffffff;
+  line-height: 1.6;
+  min-height: 100vh;
+}
+
+/* NAVIGATION BAR */
+.navbar {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 1rem;
+  background-color: rgba(87, 6, 140, 0.95);
+  padding: 1rem;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+.navbar a {
+  color: #fff;
+  text-decoration: none;
+  padding: 0.6rem 1.2rem;
+  border-radius: 30px;
+  background-color: rgba(0, 0, 0, 0.3);
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.navbar a:hover,
+.navbar a.active {
+  background-color: #e684a6;
+  color: #000;
+}
+
+/* PAGE HEADER */
+.page-header {
+  text-align: center;
+  padding: 3rem 1rem 1rem;
+  color: #ffde59;
+}
+
+.page-header h1 {
+  font-size: 2.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.page-header p {
+  color: #ddd;
+  font-size: 1.1rem;
+}
+
+/* CONTACT SECTION */
+.contact-section {
+  max-width: 800px;
+  margin: 2rem auto;
+  background-color: rgba(0, 0, 0, 0.65);
+  padding: 2rem;
+  border-radius: 15px;
+  box-shadow: 0 0 20px rgba(0,0,0,0.5);
+}
+
+.contact-section h2 {
+  text-align: center;
+  font-size: 1.8rem;
+  color: #ffde59;
+  margin-bottom: 1.5rem;
+}
+
+.contact-section p {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  margin-bottom: 1rem;
+  font-size: 1rem;
+}
+
+.icon {
+  width: 24px;
+  height: 24px;
+}
+
+/* LINKS */
+.contact-section a {
+  color: #ffde59;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.contact-section a:hover {
+  text-decoration: underline;
+  color: #ffffff;
+}
+
+/* LOCATION IMAGE */
+.location-img {
+  display: block;
+  width: 100%;
+  max-width: 400px;
+  height: auto;
+  border-radius: 12px;
+  margin: 1rem auto 0;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.5);
+}
+
+/* FOOTER */
+footer {
+  background-color: rgba(87, 6, 140, 0.95);
+  color: white;
+  text-align: center;
+  padding: 1rem 0;
+  margin-top: 2rem;
+  font-size: 0.9rem;
+}
+.map-section {
+  margin: 2rem auto;
+  padding: 1rem;
+  max-width: 900px;
+  background: rgba(0, 0, 0, 0.5);
+  border-radius: 12px;
+  color: #fff;
+}
+
+.map-section h2 {
+  text-align: center;
+  margin-bottom: 1rem;
+  color: #ffde59;
+}
+
+.map-container {
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.5);
+}

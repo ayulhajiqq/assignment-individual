@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Khairul Haziq Resume</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="hero">
+    <img src="c:\Users\Ruzana Mokhtar\Downloads\kh.jpg" alt="Khairul Haziq Profile" class="profile-img" />
+    <div class="hero-text">
+      <h1>KHAIRUL HAZIQ RESUME</h1>
+      <p>Email: vipcoconut23@gmail.com | Phone No: 011 2887 5223</p>
+    </div>
+  </header>
+
+  <nav class="navbar navbar-center">
+    <a href="about.html">About Myself</a>
+    <a href="gallery.html">My Gallery</a>
+    <a href="skills.html">Skills</a>
+    <a href="workexperience.html">Work Experience</a>
+    <a href="education.html">My Education</a>
+    <a href="playlist.html">My Playlist</a>
+    <a href="contact.html">Contact</a>
+  </nav>
+
+  <header class="hero">
+
+    <div class="hero-text">
+      <h1>✨LETS EXPLOREE✨</h1>
+      <p>CLICK TO VIEW</p>
+    </div>
+  </header>
+
+  <footer>
+<div class="clock-container">
+  <h2>🕒 Current Time 🕒</h2>
+  <div id="clock"></div>
+</div>
+
+<script>
+  function updateClock() {
+    const now = new Date();
+    const hours = String(now.getHours()).padStart(2, "0");
+    const minutes = String(now.getMinutes()).padStart(2, "0");
+    const seconds = String(now.getSeconds()).padStart(2, "0");
+    const timeString = `${hours}:${minutes}:${seconds}`;
+    document.getElementById("clock").textContent = timeString;
+  }
+
+  setInterval(updateClock, 1000); // Update every second
+  updateClock(); // Initial call
+</script>
+
+
+    <p>© Khairul Haziq Co. 2022. All rights reserved.</p>
+  </footer>
+</body>
+</html>

@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>My Skills - Khairul Haziq</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="icon" type="image/png" href="ata.png">
+</head>
+
+<body>
+  <nav class="navbar navbar-center">
+    <a href="index.html">🏠 Home</a>
+    <a href="about.html">👤 About</a>
+    <a href="gallery.html">📸 Gallery</a>
+    <a href="skills.html"class="active">🛠 Skills</a>
+    <a href="workexperience.html">💼 Experience</a>
+    <a href="education.html">🎓 Education</a>
+    <a href="playlist.html">Playlist</a>
+    <a href="contact.html">📞 Contact</a>
+  </nav>
+
+  <!-- Skills Section -->
+  <section id="skills" class="skills-section">
+    <h2>💼 Skills</h2>
+    <div class="skills-grid">
+      <div class="skill-card">💻 <span>HTML & CSS</span></div>
+      <div class="skill-card">📊 <span>Canva Editing</span></div>
+      <div class="skill-card">🎬 <span>Adobe Premiere Pro</span></div>
+      <div class="skill-card">🤝 <span>Teamwork</span></div>
+      <div class="skill-card">💡 <span>Creativity</span></div>
+      <div class="skill-card">⏰ <span>Time Management</span></div>
+      <div class="skill-card">🧠 <span>Problem Solving</span></div>
+      <div class="skill-card">🗣️ <span>Communication</span></div>
+    </div>
+      </section>
+
+<!-- Belajar di Bawah Section -->
+<section class="learn-section">
+  <h2>📚 Learn below one of my skills 📚</h2>
+  <div class="video-container">
+    <iframe
+      src="https://www.youtube.com/embed/oUlpbue-Gw0"
+      title="Belajar Video"
+      frameborder="0"
+      allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+      allowfullscreen>
+    </iframe>
+  </div>
+</section>
+
+<!-- Footer -->
+  <footer>
+<div class="clock-container">
+  <h2>🕒 Current Time 🕒</h2>
+  <div id="clock"></div>
+</div>
+
+<script>
+  function updateClock() {
+    const now = new Date();
+    const hours = String(now.getHours()).padStart(2, "0");
+    const minutes = String(now.getMinutes()).padStart(2, "0");
+    const seconds = String(now.getSeconds()).padStart(2, "0");
+    const timeString = `${hours}:${minutes}:${seconds}`;
+    document.getElementById("clock").textContent = timeString;
+  }
+
+  setInterval(updateClock, 1000); // Update every second
+  updateClock(); // Initial call
+</script>
+
+
+    <p>© Khairul Haziq Co. 2022. All rights reserved.</p>
+  </footer>
+</body>
+</html>

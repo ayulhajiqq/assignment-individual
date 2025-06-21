@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Work Experience</title>
+  <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+
+<!-- Navbar -->
+<nav class="navbar navbar-center">
+  <a href="index.html">🏠 Home</a>
+  <a href="about.html">👤 About</a>
+  <a href="gallery.html">📸 Gallery</a>
+  <a href="skills.html">🛠 Skills</a>
+  <a href="workexperience.html" class="active">💼 Experience</a>
+  <a href="education.html">🎓 Education</a>
+  <a href="playlist.html">🎼 Playlist</a>
+  <a href="contact.html">📞 Contact</a>
+</nav>
+
+<!-- Header -->
+<header class="experience-header">
+  <h1>💼 Work Experience</h1>
+  <p>My professional journey and internship experiences</p>
+</header>
+
+<!-- Experience Table -->
+<section class="experience-table-section">
+  <table class="experience-table">
+    <thead>
+      <tr>
+        <th>Logo</th>
+        <th>Company</th>
+        <th>Position</th>
+        <th>Duration</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><img src="putra.jpeg" alt="Putra Logo" class="table-img"></td>
+        <td>Putra Specialist Hospital Melaka SDN BHD</td>
+        <td>Medical Record Assistant</td>
+        <td>Feb 2025 - Apr 2025</td>
+        <td>Managing hospital patient record</td>
+      </tr>
+      <tr>
+        <td><img src="tornado.jpg" alt="Tornado Logo" class="table-img"></td>
+        <td>Tornado Cafe Klebang</td>
+        <td>Cashier & Barista</td>
+        <td>Jul 2022 - Sep 2022</td>
+        <td>Handled transactions, made beverages & provided customer service</td>
+      </tr>
+    </tbody>
+  </table>
+</section>
+
+<!-- Footer -->
+  <footer>
+<div class="clock-container">
+  <h2>🕒 Current Time 🕒</h2>
+  <div id="clock"></div>
+</div>
+
+<script>
+  function updateClock() {
+    const now = new Date();
+    const hours = String(now.getHours()).padStart(2, "0");
+    const minutes = String(now.getMinutes()).padStart(2, "0");
+    const seconds = String(now.getSeconds()).padStart(2, "0");
+    const timeString = `${hours}:${minutes}:${seconds}`;
+    document.getElementById("clock").textContent = timeString;
+  }
+
+  setInterval(updateClock, 1000); // Update every second
+  updateClock(); // Initial call
+</script>
+
+
+    <p>© Khairul Haziq Co. 2022. All rights reserved.</p>
+  </footer>
+</body>
+</html>

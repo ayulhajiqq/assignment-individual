@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>My Gallery - Khairul Haziq</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="icon" type="image/png" href="ata.png">
+</head>
+<body>
+
+<!-- NAVIGATION -->
+<nav class="navbar navbar-center">
+  <a href="index.html">🏠 Home</a>
+  <a href="about.html">👤 About</a>
+  <a href="gallery.html" class="active">📸 Gallery</a>
+  <a href="skills.html">🛠 Skills</a>
+  <a href="workexperience.html">💼 Experience</a>
+  <a href="education.html">🎓 Education</a>
+  <a href="playlist.html">🎼 Playlist</a>
+  <a href="contact.html">📞 Contact</a>
+</nav>
+
+<!-- MAIN GALLERY -->
+<main>
+  <section class="gallery-section">
+    <h2>📸 My Gallery</h2>
+    <div class="media-row">
+      <img src="hehe.jpg" alt="Gallery Image 1" />
+      <img src="fal.jpg" alt="Gallery Image 2" />
+      <img src="huhu.jpg" alt="Gallery Image 3" />
+    </div>
+  </section>
+
+  <section class="gallery-section">
+    <h2>🎥 Me in Videos</h2>
+    <div class="media-row">
+      <video src="khai.mp4" controls></video>
+      <video src="khai 2.mp4" controls></video>
+      <video src="khai3.mp4" controls></video>
+    </div>
+  </section>
+
+  <section class="gallery-section">
+    <h2>🧒 Me When Smol and Cutez</h2>
+    <div class="media-row">
+      <img src="khaii.jpg" alt="Gallery Image 4" />
+      <img src="c:\Users\Ruzana Mokhtar\Downloads\khaiyul3.jpg" alt="Gallery Image 5" />
+      <img src="c:\Users\Ruzana Mokhtar\Downloads\khaiyul4.jpg" alt="Gallery Image 6" />
+    </div>
+  </section>
+</main>
+
+<!-- FOOTER -->
+<footer>
+  <div class="clock-container">
+    <h2>🕒 Current Time 🕒</h2>
+    <div id="clock"></div>
+  </div>
+
+  <script>
+    function updateClock() {
+      const now = new Date();
+      const hours = String(now.getHours()).padStart(2, "0");
+      const minutes = String(now.getMinutes()).padStart(2, "0");
+      const seconds = String(now.getSeconds()).padStart(2, "0");
+      const timeString = `${hours}:${minutes}:${seconds}`;
+      document.getElementById("clock").textContent = timeString;
+    }
+
+    setInterval(updateClock, 1000);
+    updateClock();
+  </script>
+
+  <p>© Khairul Haziq 2025. All rights reserved.</p>
+</footer>
+
+</body>
+</html>

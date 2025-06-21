@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Contact Me - Khairul Haziq</title>
+  <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+
+  <!-- Navigation Bar -->
+  <nav class="navbar">
+    <a href="index.html">🏠 Home</a>
+    <a href="about.html">👤 About</a>
+    <a href="gallery.html">📸 Gallery</a>
+    <a href="skills.html">🛠 Skills</a>
+    <a href="workexperience.html">💼 Experience</a>
+    <a href="education.html">🎓 Education</a>
+    <a href="playlist.html">🎼 Playlist</a>
+    <a href="contact.html" class="active">📞 Contact</a>
+  </nav>
+
+  <!-- Page Header -->
+  <header class="page-header">
+    <h1>📞 Contact Me</h1>
+    <p>Feel Free To Reach Me</p>
+  </header>
+
+  <!-- Contact Section -->
+  <section class="contact-section">
+    <h2>📱 Contact Details 📱</h2>
+
+    <p>
+      <img src="gmail.webp" alt="Gmail Icon" class="icon" />
+      <strong>Email:</strong>
+      <a href="https://mail.google.com/mail/?view=cm&to=vipcoconut23@gmail.com" target="_blank">
+      vipcoconut23@gmail.com
+      </a>
+    </p>
+
+    <p>
+      <img src="wasap.webp" alt="WhatsApp Icon" class="icon" />
+      <strong>WhatsApp:</strong>
+      <a href="https://wa.me/601128875223" target="_blank">+60 11‑2887 5223</a>
+    </p>
+
+    <p>
+      <img src="ig.jpg" alt="Instagram Icon" class="icon" />
+      <strong>Instagram:</strong>
+      <a href="https://www.instagram.com/khairulhaziq._" target="_blank">@khairulhaziq._</a>
+    </p>
+
+    <p>
+      <img src="gh.png" alt="GitHub Icon" class="icon" />
+      <strong>GitHub:</strong>
+      <a href="https://github.com/khairulllhaziq113" target="_blank">khairulllhaziq113</a>
+    </p>
+
+    <p>
+      <img src="gmaps.png" alt="Maps Icon" class="icon" />
+      <strong>Address:</strong>
+      <a href="https://www.google.com/maps/place/470,+Jalan+Kampung+Lapan,+Taman+Kenanga,+75250+Melaka/" target="_blank">
+        470b, Jalan Siantan,Kampung Lapan, Tengkera, Melaka Tengah, 75200, Melaka
+      </a>
+    </p>
+
+ <section class="map-section">
+  <h2>📍 My Google Map Location</h2>
+  <div class="map-container">
+    <iframe 
+      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3986.8648277835487!2d102.23022357472679!3d2.2047319977757653!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31d1f1c9cc335b3b%3A0xb15d7b9ee2f2f1ad!2s470e%2C%20Jalan%20Siantan%202%2F3%20A%2C%20Kampung%20Lapan%20Tengkera%2C%2075250%20Melaka!5e0!3m2!1sen!2smy!4v1750491815941!5m2!1sen!2smy" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </iframe>
+  </div>
+</section>
+
+  <!-- Footer -->
+  <footer>
+<div class="clock-container">
+  <h2>🕒 Current Time 🕒</h2>
+  <div id="clock"></div>
+</div>
+
+<script>
+  function updateClock() {
+    const now = new Date();
+    const hours = String(now.getHours()).padStart(2, "0");
+    const minutes = String(now.getMinutes()).padStart(2, "0");
+    const seconds = String(now.getSeconds()).padStart(2, "0");
+    const timeString = `${hours}:${minutes}:${seconds}`;
+    document.getElementById("clock").textContent = timeString;
+  }
+
+  setInterval(updateClock, 1000); // Update every second
+  updateClock(); // Initial call
+</script>
+
+    <p>© 2025 Nur Khairul Haziq. All rights reserved.</p>
+  </footer>
+
+</body>
+</html>

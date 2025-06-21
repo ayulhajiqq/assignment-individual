@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>About Me</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <nav class="navbar navbar-center">
+    <a href="index.html">🏠 Home</a>
+    <a href="about.html" class="active">👤 About</a>
+    <a href="gallery.html">📸 Gallery</a>
+    <a href="skills.html">🛠 Skills</a>
+    <a href="workexperience.html">💼 Experience</a>
+    <a href="education.html">🎓 Education</a>
+    <a href="playlist.html">🎼Playlist</a>
+    <a href="contact.html">📞 Contact</a>
+  </nav>
+
+  <section id="about">
+    <h2>✨ <span class="typewriter"></span> ✨</h2>
+<script>
+  const text = "About Myself";
+  let index = 0;
+
+  function typeEffect() {
+    const span = document.querySelector(".typewriter");
+    if (index < text.length) {
+      span.innerHTML += text.charAt(index);
+      index++;
+      setTimeout(typeEffect, 100);
+    }
+  }
+
+  window.onload = function () {
+    typeEffect();
+  };
+</script>
+    <img src="k.jpg" alt="Khairul Haziq About" class="about-img" />
+    <ul>
+      <li>👨 My full name is Nur Khairul Haziq</li>
+      <li>🏠 From Seremban, now in Melaka Tengah</li>
+      <li>🎂 Born on 18/11/2004</li>
+      <li>🎓 Studying Diploma in Information Management @ UiTM Segamat</li>
+      <li>💻 Passionate in web design & front-end dev</li>
+      <li>🎬 Skilled in Adobe Premiere Pro & video editing</li>
+      <li>☕ Ex-barista & coffee enthusiast</li>
+      <li>🎧 Music helps me focus</li>
+      <li>🌱 Always learning new trends</li>
+      <li>🏸 I loves playing badminton</li>
+    </ul>
+  </section>
+
+    <section id="about">
+<h2>✨Meee✨</h2>
+ <img src="khaiz.jpg" alt="Khairul Haziq About" class="about-img" />
+    </section>
+
+<footer>
+
+  <div class="clock-container">
+  <h2>🕒 Current Time 🕒</h2>
+  <div id="clock"></div>
+</div>
+
+<script>
+  function updateClock() {
+    const now = new Date();
+    const hours = String(now.getHours()).padStart(2, "0");
+    const minutes = String(now.getMinutes()).padStart(2, "0");
+    const seconds = String(now.getSeconds()).padStart(2, "0");
+    const timeString = `${hours}:${minutes}:${seconds}`;
+    document.getElementById("clock").textContent = timeString;
+  }
+
+  setInterval(updateClock, 1000); // Update every second
+  updateClock(); // Initial call
+</script>
+
+  <p>© Khairul Haziq 2025. All rights reserved.</p>
+</footer>
+
+</body>
+</html>
